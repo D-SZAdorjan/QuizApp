@@ -44,11 +44,21 @@
                 android:hint="Your Name"/>
 
             <Button
-                android:id="@+id/btnGs"
+                android:id="@+id/btnContact"
                 android:layout_width="60pt"
                 android:layout_height="18pt"
                 android:layout_below="@+id/et_main"
                 android:layout_marginTop="20pt"
+                android:text="Contact"
+                android:textSize="6pt"
+                android:backgroundTint="@color/orange_f9100"/>
+
+            <Button
+                android:id="@+id/btnGs"
+                android:layout_width="60pt"
+                android:layout_height="18pt"
+                android:layout_below="@+id/btnContact"
+                android:layout_marginTop="5pt"
                 android:text="Get Started"
                 android:textSize="6pt"
                 android:backgroundTint="@color/orange_f9100"/>
