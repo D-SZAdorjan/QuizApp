@@ -1,0 +1,50 @@
+1.Melyik a helyes válasz?
+Helytelen//0
+Helyes//true
+Helytelen//0
+Helytelen//0
+2.Melyik kettes a válaszok közül?
+2//true
+1//0
+11//0
+222//0
+3.Mennyi 4 négyzetgyöke?
+2//true
+4//0
+16//0
+0//0
+4.Hány nap van egy hétben?
+256//0
+31//0
+7//true
+420//0
+5.Hány perc van egy órában?
+60//0
+120//true
+10//0
+61//0
+6.Hányadikán van elseje?
+másodikán//0
+harmadikán//0
+negyedikén//0
+elsején//true
+7.Melyik a kakuk tojás?
+cipő//0
+kalap//true
+papucs//0
+szandál//0
+8.Mikor fél a nyúl?
+soha//0
+néha//0
+mindig//0
+mikor ketté vágják//true
+9.Milyen j-vel írják a kamion szót?
+nincs benne j vagy ly//true
+l ipszilonnal//0
+pontos jvel//0
+l-el és j-vel//0
+10.Mennyi 1+1?
+5//0
+2//true
+25//0
+30//0

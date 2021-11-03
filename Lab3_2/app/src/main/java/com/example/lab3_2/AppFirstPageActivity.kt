@@ -18,8 +18,8 @@ class AppFirstPageActivity : AppCompatActivity() {
 
         user_name = findViewById(R.id.name_of_player)
 
-        val u_name = intent.getStringExtra(MainActivity.EXTRA_MESSAGE)
+        //val u_name = intent.getStringExtra(MainActivity.EXTRA_MESSAGE)
 
-        user_name.setText(u_name)
+        //user_name.setText(u_name)
     }
 }

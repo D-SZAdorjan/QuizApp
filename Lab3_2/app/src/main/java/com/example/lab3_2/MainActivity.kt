@@ -1,5 +1,6 @@
 package com.example.lab3_2
 
+import QuizController
 import android.app.Instrumentation
 import android.content.Context
 import android.content.Intent
@@ -18,11 +19,15 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
+import androidx.fragment.app.FragmentManager
 import com.google.android.material.snackbar.Snackbar
+import logic.MyViewModel
 import java.security.AccessController.getContext
 
 class MainActivity : AppCompatActivity() {
-    companion object{
+
+    /*companion object{
         const val EXTRA_MESSAGE = "com.example.QuizApp.USERNAME"
     }
 
@@ -35,13 +40,13 @@ class MainActivity : AppCompatActivity() {
         override fun parseResult(resultCode: Int, intent: Intent?): Uri? {
             return if (resultCode == RESULT_OK) intent?.data else null
         }
-    }
+    }*/
 
     private lateinit var btnGetStarted : Button
     private lateinit var etMainEditText : EditText
     private lateinit var btnContacts : Button
 
-    private val activityRL = registerForActivityResult(PickContact()){
+    /*private val activityRL = registerForActivityResult(PickContact()){
         it?.also { contactUri ->
             val projection = arrayOf(
                 ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME,
@@ -54,15 +59,22 @@ class MainActivity : AppCompatActivity() {
                 close()
             }
         }
-    }
+    }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         super.getSupportActionBar()?.hide()
 
+        //creating the viewmodel
+        val model: MyViewModel by viewModels()
+        //creating the quizController object
+        val quizC = QuizController(this)
+        //adding the quizController object to the viewmodel
+        model.setQuizController(quizC)
+
         super.setContentView(R.layout.activity_main)
 
-        btnGetStarted = findViewById(R.id.btnGs)
+        /*btnGetStarted = findViewById(R.id.btnGs)
         etMainEditText = findViewById(R.id.et_main)
         btnContacts = findViewById(R.id.btnContact)
 
@@ -74,7 +86,9 @@ class MainActivity : AppCompatActivity() {
 
         btnContacts.setOnClickListener{
             onContactButtonClick()
-        }
+        }*/
+
+
     }
 
     override fun onStart() {
@@ -102,7 +116,7 @@ class MainActivity : AppCompatActivity() {
         Log.i("GSBTN", "The app got Destroyed!")
     }
 
-    fun onGSBUttonClick(){
+    /*fun onGSBUttonClick(){
         Log.i("GSBTN", "clicked")
         when{
             etMainEditText.text.isBlank() -> Snackbar.make(window.decorView.rootView, "The \"Your name\" field can't be blank", Snackbar.LENGTH_LONG).setAction("Try Again"){}.show()
@@ -120,5 +134,5 @@ class MainActivity : AppCompatActivity() {
 
     fun onContactButtonClick(){
         activityRL.launch(0)
-    }
+    }*/
 }
