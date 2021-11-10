@@ -21,6 +21,10 @@ import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.fragment.app.FragmentManager
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.snackbar.Snackbar
 import logic.MyViewModel
 import java.security.AccessController.getContext
@@ -88,6 +92,10 @@ class MainActivity : AppCompatActivity() {
             onContactButtonClick()
         }*/
 
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        val navController = findNavController(R.id.fragmentContainerView)
+
+        bottomNavigationView.setupWithNavController(navController)
 
     }
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/questionItem_card"
+    android:layout_marginBottom="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionItem_question"
+        android:text="Question"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionItem_singleAnswer"
+        android:text="single answer"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/questionItem_question"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionItem_answer"
+        android:text="Answer"
+        android:textSize="20dp"
+        android:textColor="@color/orange_f9100"
+        app:layout_constraintTop_toBottomOf="@+id/questionItem_singleAnswer"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionItem_detailsBtn"
+        android:text="Details"
+        app:layout_constraintTop_toBottomOf="@id/questionItem_answer"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionItem_deleteBtn"
+        android:text="Delete"
+        app:layout_constraintTop_toBottomOf="@id/questionItem_answer"
+        app:layout_constraintLeft_toRightOf="@+id/questionItem_detailsBtn"
+        android:layout_marginLeft="30dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greay_858585"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/questionItem_deleteBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

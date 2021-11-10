@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/home_icon"
+        android:title="Home"/>
+    <item
+        android:id="@+id/quizStartFragment"
+        android:enabled="true"
+        android:icon="@drawable/question_icon"
+        android:title="Quiz"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile"/>
+    <item
+        android:id="@+id/questionListFragment"
+        android:enabled="true"
+        android:icon="@drawable/list_icon"
+        android:title="Questions"/>
+    <item
+        android:id="@+id/questionAddFragment"
+        android:enabled="true"
+        android:icon="@drawable/plus_icon"
+        android:title="+ question"/>
+</menu>

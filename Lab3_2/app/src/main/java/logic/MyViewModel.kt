@@ -16,6 +16,10 @@ class MyViewModel : ViewModel() {
         return qC
     }
 
+    fun getQuestionList() : MutableList<Question>{
+        return listOfQuestions
+    }
+
     fun prepareQuiz(numberQ : Int = 5){
         qC?.randomizeQuestions()
         numberofQ = numberQ

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".QuestionDetailFragment"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentquestiondetail_question"
+        android:text="Question"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/fragmentquestiondetail_answer1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greay_858585"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentquestiondetail_question"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentquestiondetail_answer1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentquestiondetail_answer1"
+        android:text="Answer1"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentquestiondetail_question"
+        app:layout_constraintBottom_toBottomOf="@+id/fragmentquestiondetail_answer2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentquestiondetail_answer2"
+        android:text="Answer2"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentquestiondetail_answer1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentquestiondetail_answer3"
+        android:text="Answer3"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentquestiondetail_answer2" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentquestiondetail_answer4"
+        android:text="Answer4"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentquestiondetail_answer3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
